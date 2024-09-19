@@ -196,14 +196,6 @@ def homeworktype_get(homeworkId):
 	#print(typeget)
 	return typeget
 
-#作业答案部分
-#qqq="https://padapp.msyk.cn/ws/student/homework/studentHomework/getHomeworkList?studentId=9542C48DB599476E8F6020BB9DBF80B6&subjectCode=&homeworkType=-1&pageIndex=1&pageSize=0&statu=1&homeworkName=&unitId=9D12C13E97394EBFAB1489DAD98D8F02"
-#qqq_1=requests.get(qqq)
-#qqq_2 = qqq_1.text 
-#print(qqq_2)
-#qqq_3 = json.loads(qqq_2).get('homeworkNum') 
-#print(qqq_3)
-
 def get_homework():
 	homeworkId=input("请输入作业ID:")
 	typeget=homeworktype_get(homeworkId)
