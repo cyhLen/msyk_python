@@ -2,6 +2,11 @@
 兄弟们，加油！
 ===
 # 目前版本:2.1<br>
+## 使用说明：
+2.1以下的版本直接运行`msyk_python_vx.x_20xxxxxx.py`<br>
+如果你使用的版本是**2.1及以上**<br>
+将`msyk_python_vx.x_20xxxxxx.py`和`getHomeworkId_new.py`,`homework_submit.py`放到同一级目录里即可<br>
+然后运行`msyk_python_vx.x_20xxxxxx.py`<br>
 ## 功能:<br>
 ### 1.作业(支持获取答案，跑作业ID，提交选择答案等)<br>
 作业类型已支持全部类型<br>
