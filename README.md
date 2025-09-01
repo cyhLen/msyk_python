@@ -7,6 +7,7 @@
 如果你使用的版本是**2.1及以上**<br>
 将`msyk_python_vx.x_20xxxxxx.py`和`getHomeworkId_new.py`,`homework_submit.py`放到同一级目录里即可<br>
 然后运行`msyk_python_vx.x_20xxxxxx.py`<br>
+在2.2版本更新后，因为代码数量过多，往期代码并入`old_code`文件夹，有需要自取<br>
 ## 功能:<br>
 ### 1.作业(支持获取答案，跑作业ID，提交选择答案等)<br>
 作业类型已支持全部类型<br>
@@ -21,6 +22,8 @@
 1.登录自己帐号<br>
 2.打印作业列表<br>
 3.获取作业材料和答案(支持目前全部作业类型)<br>
+# bug修复<br>
+1.修复了多选题答案只有一个时提交不上的bug，改用了新api<br>
 
 版本更新日志:<br>
 ===
