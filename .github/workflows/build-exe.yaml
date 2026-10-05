@@ -1,14 +1,13 @@
-name: Build EXE
+name: Build EXE & Release
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags: [ "v*" ]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -35,8 +34,10 @@ jobs:
         name: msyk-windows-exe
         path: dist/
 
-    - name: Create Release (on tag push)
+    - name: Create Release
       if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v2
       with:
         files: dist/*.exe
+        name: msyk ${{ github.ref_name }}
+        generate_release_notes: true
